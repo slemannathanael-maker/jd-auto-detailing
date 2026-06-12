@@ -5,7 +5,6 @@ import { useScrollNav } from '../hooks/useScrollNav'
 const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Cars', to: '/cars' },
-  { label: 'Super Cars', to: '/supercars' },
 ]
 
 interface LayoutProps {
@@ -33,9 +32,9 @@ export default function Layout({ children }: LayoutProps) {
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative">
                 <img
-                  src="/favicon.svg"
+                  src="/jd-logo.svg"
                   alt="JD Auto Detailing"
-                  className="h-10 w-10 rounded-xl shadow-brand group-hover:scale-110 transition-transform duration-300"
+                  className="h-12 w-16 rounded-xl shadow-brand group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 rounded-xl bg-brand-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse-glow" />
               </div>
@@ -157,7 +156,7 @@ export default function Layout({ children }: LayoutProps) {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-4">
-                <img src="/favicon.svg" alt="JD Auto Detailing" className="h-10 w-10 rounded-xl" />
+                <img src="/jd-logo.svg" alt="JD Auto Detailing" className="h-12 w-16 rounded-xl" />
                 <div>
                   <div className="font-display font-bold text-white text-lg">JD Auto Detailing</div>
                   <div className="text-xs text-brand-green tracking-widest uppercase">LLC</div>
