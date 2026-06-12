@@ -25,7 +25,7 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <Star key={i} size={14} className="text-brand-400 fill-brand-400" />
+        <Star key={i} size={14} className="text-teal-500 fill-teal-500" />
       ))}
     </div>
   )
@@ -33,10 +33,10 @@ function Stars({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section className="py-24 bg-zinc-900/50">
+    <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="text-brand-500 font-semibold text-sm uppercase tracking-widest mb-3">Reviews</p>
+          <p className="text-teal-600 font-semibold text-sm uppercase tracking-widest mb-3">Reviews</p>
           <h2 className="section-heading">What Our Customers Say</h2>
         </div>
 
@@ -44,10 +44,10 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div key={t.name} className="card flex flex-col gap-4">
               <Stars count={t.rating} />
-              <p className="text-zinc-300 text-sm leading-relaxed flex-1">"{t.text}"</p>
-              <div className="border-t border-zinc-800 pt-4">
-                <p className="text-white font-semibold text-sm">{t.name}</p>
-                <p className="text-zinc-500 text-xs">{t.vehicle}</p>
+              <p className="text-slate-600 text-sm leading-relaxed flex-1">"{t.text}"</p>
+              <div className="border-t border-slate-100 pt-4">
+                <p className="text-slate-900 font-semibold text-sm">{t.name}</p>
+                <p className="text-slate-400 text-xs">{t.vehicle}</p>
               </div>
             </div>
           ))}

@@ -13,12 +13,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+    <nav className="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-black text-brand-500 tracking-tight">JD</span>
-            <span className="text-white font-bold text-lg tracking-tight hidden sm:block">Auto Detailing</span>
+            <div className="flex items-center gap-1">
+              <span className="text-2xl font-black text-teal-600 tracking-tight">JD</span>
+              <span className="hidden sm:block w-px h-6 bg-slate-300 mx-1" />
+              <div className="hidden sm:flex flex-col leading-tight">
+                <span className="text-slate-900 font-bold text-sm tracking-tight">Auto Detailing</span>
+                <span className="text-teal-600 font-medium text-xs tracking-wide">North NJ</span>
+              </div>
+            </div>
           </a>
 
           <div className="hidden md:flex items-center gap-6">
@@ -26,7 +32,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-zinc-400 hover:text-white text-sm font-medium transition-colors"
+                className="text-slate-600 hover:text-teal-600 text-sm font-medium transition-colors"
               >
                 {l.label}
               </a>
@@ -37,7 +43,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="md:hidden p-2 text-zinc-400 hover:text-white"
+            className="md:hidden p-2 text-slate-500 hover:text-teal-600"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -47,13 +53,13 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-zinc-800 bg-zinc-950 px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-slate-200 bg-white px-4 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-zinc-300 hover:text-white font-medium text-base"
+              className="text-slate-700 hover:text-teal-600 font-medium text-base"
             >
               {l.label}
             </a>
