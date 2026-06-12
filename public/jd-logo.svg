@@ -1,60 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 230" width="300" height="230">
   <!-- Background rounded rect -->
-  <rect width="200" height="160" rx="22" fill="#0f1f5c"/>
+  <rect width="300" height="230" rx="28" fill="#0d1b55"/>
 
-  <!-- Swirl circles (background) -->
-  <circle cx="130" cy="68" r="58" fill="none" stroke="#2a7a8a" stroke-width="6" opacity="0.55"/>
-  <circle cx="130" cy="68" r="40" fill="none" stroke="#2a7a8a" stroke-width="5" opacity="0.35"/>
+  <!-- Background swirl arcs (large teal rings, bottom-right sweeping up) -->
+  <circle cx="210" cy="145" r="110" fill="none" stroke="#2a8a9e" stroke-width="18" opacity="0.45"/>
+  <circle cx="210" cy="145" r="78"  fill="none" stroke="#2a8a9e" stroke-width="14" opacity="0.30"/>
 
-  <!-- Speed lines (left of car) -->
-  <line x1="18" y1="52" x2="62" y2="52" stroke="#3ecfaf" stroke-width="3.5" stroke-linecap="round"/>
-  <line x1="10" y1="63" x2="58" y2="63" stroke="#3ecfaf" stroke-width="3" stroke-linecap="round"/>
-  <line x1="18" y1="74" x2="60" y2="74" stroke="#3ecfaf" stroke-width="3" stroke-linecap="round"/>
-  <line x1="26" y1="85" x2="62" y2="85" stroke="#3ecfaf" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="22" y1="42" x2="55" y2="42" stroke="#3ecfaf" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Speed lines (horizontal, left side, varied lengths) -->
+  <line x1="8"  y1="68"  x2="88"  y2="68"  stroke="#3ecfaf" stroke-width="5"   stroke-linecap="round"/>
+  <line x1="4"  y1="83"  x2="80"  y2="83"  stroke="#3ecfaf" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="8"  y1="98"  x2="85"  y2="98"  stroke="#3ecfaf" stroke-width="4"   stroke-linecap="round"/>
+  <line x1="14" y1="112" x2="82"  y2="112" stroke="#3ecfaf" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="10" y1="54"  x2="72"  y2="54"  stroke="#3ecfaf" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="18" y1="126" x2="78"  y2="126" stroke="#3ecfaf" stroke-width="3"   stroke-linecap="round"/>
 
-  <!-- Car body (sports car silhouette facing right) -->
-  <!-- Main body -->
-  <path d="M58 88 L62 72 L78 55 L108 48 L138 50 L162 62 L170 75 L172 88 Z"
+  <!-- ── CAR BODY ── -->
+  <!-- Main lower body -->
+  <path d="M75 128 L80 105 L100 82 L148 68 L200 65 L240 72 L265 90 L270 115 L268 128 Z"
         fill="#3ecfaf"/>
-  <!-- Roof / cabin -->
-  <path d="M80 55 L88 40 L118 36 L136 40 L138 50 L108 48 Z"
+  <!-- Cabin/roof -->
+  <path d="M108 82 L120 54 L168 44 L210 48 L228 62 L220 70 L200 65 L148 68 L110 78 Z"
         fill="#3ecfaf"/>
-  <!-- Front bumper detail -->
-  <path d="M162 62 L172 68 L174 80 L170 88 L162 88 Z"
-        fill="#35b89a"/>
-  <!-- Windshield (dark) -->
-  <path d="M88 52 L96 40 L116 37 L126 43 L122 52 Z"
-        fill="#0f1f5c" opacity="0.6"/>
+  <!-- Windshield (dark glass) -->
+  <path d="M122 78 L134 54 L170 46 L196 54 L188 68 L148 68 Z"
+        fill="#0d1b55" opacity="0.55"/>
   <!-- Rear window -->
-  <path d="M126 43 L134 42 L136 50 L122 52 Z"
-        fill="#0f1f5c" opacity="0.6"/>
+  <path d="M196 54 L208 50 L224 60 L220 70 L200 65 Z"
+        fill="#0d1b55" opacity="0.55"/>
+  <!-- Front bumper/nose -->
+  <path d="M265 90 L278 100 L278 118 L270 128 L265 128 Z"
+        fill="#2eb89a"/>
+  <!-- Rear spoiler/fin -->
+  <path d="M75 110 L82 104 L80 128 L75 128 Z"
+        fill="#2eb89a"/>
+  <!-- Side skirt highlight -->
+  <path d="M90 128 L265 128 L265 132 L90 132 Z"
+        fill="#2eb89a" opacity="0.6"/>
 
-  <!-- Front wheel -->
-  <circle cx="150" cy="90" r="14" fill="#0f1f5c"/>
-  <circle cx="150" cy="90" r="10" fill="#3ecfaf"/>
-  <circle cx="150" cy="90" r="6" fill="#0f1f5c"/>
-  <!-- Wheel spokes -->
-  <line x1="150" y1="84" x2="150" y2="96" stroke="#3ecfaf" stroke-width="2"/>
-  <line x1="144" y1="90" x2="156" y2="90" stroke="#3ecfaf" stroke-width="2"/>
+  <!-- ── REAR WHEEL ── -->
+  <circle cx="118" cy="132" r="22" fill="#0d1b55"/>
+  <circle cx="118" cy="132" r="16" fill="#3ecfaf"/>
+  <circle cx="118" cy="132" r="8"  fill="#0d1b55"/>
+  <!-- X spokes (diagonal) -->
+  <line x1="107" y1="121" x2="129" y2="143" stroke="#0d1b55" stroke-width="3"/>
+  <line x1="129" y1="121" x2="107" y2="143" stroke="#0d1b55" stroke-width="3"/>
 
-  <!-- Rear wheel -->
-  <circle cx="88" cy="90" r="14" fill="#0f1f5c"/>
-  <circle cx="88" cy="90" r="10" fill="#3ecfaf"/>
-  <circle cx="88" cy="90" r="6" fill="#0f1f5c"/>
-  <!-- Wheel spokes -->
-  <line x1="88" y1="84" x2="88" y2="96" stroke="#3ecfaf" stroke-width="2"/>
-  <line x1="82" y1="90" x2="94" y2="90" stroke="#3ecfaf" stroke-width="2"/>
+  <!-- ── FRONT WHEEL ── -->
+  <circle cx="228" cy="132" r="22" fill="#0d1b55"/>
+  <circle cx="228" cy="132" r="16" fill="#3ecfaf"/>
+  <circle cx="228" cy="132" r="8"  fill="#0d1b55"/>
+  <!-- X spokes (diagonal) -->
+  <line x1="217" y1="121" x2="239" y2="143" stroke="#0d1b55" stroke-width="3"/>
+  <line x1="239" y1="121" x2="217" y2="143" stroke="#0d1b55" stroke-width="3"/>
 
-  <!-- Spoiler -->
-  <path d="M58 78 L64 75 L62 88 L58 88 Z" fill="#35b89a"/>
+  <!-- ── BOTTOM BANNER ── -->
+  <rect x="18" y="162" width="264" height="52" rx="14" fill="#0a1440"/>
+  <rect x="18" y="162" width="264" height="52" rx="14" fill="none" stroke="#3ecfaf" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- Bottom banner -->
-  <rect x="14" y="108" width="172" height="40" rx="10" fill="#0a1540" opacity="0.9"/>
-  <rect x="14" y="108" width="172" height="40" rx="10" fill="none" stroke="#3ecfaf" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- Text: JD AUTO DETAILING -->
-  <text x="100" y="133" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="0.5">
-    <tspan fill="white">JD </tspan><tspan fill="#3ecfaf">AUTO </tspan><tspan fill="white">DETAILING</tspan>
+  <!-- Text -->
+  <text x="150" y="197" text-anchor="middle"
+        font-family="Arial Black, Impact, sans-serif"
+        font-size="26" font-weight="900"
+        font-style="italic"
+        letter-spacing="1">
+    <tspan fill="#d0d8f0">JD </tspan><tspan fill="#3ecfaf">AUTO </tspan><tspan fill="#d0d8f0">DETAILING</tspan>
   </text>
 </svg>
