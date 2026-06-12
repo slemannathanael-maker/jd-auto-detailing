@@ -1,25 +1,26 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Packages from './components/Packages'
-import Gallery from './components/Gallery'
-import Testimonials from './components/Testimonials'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import Home from './pages/Home'
+import Cars from './pages/Cars'
+import SuperCars from './pages/SuperCars'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Packages />
-      <Gallery />
-      <Testimonials />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cars" element={<Cars />} />
+        <Route path="/supercars" element={<SuperCars />} />
+      </Routes>
+    </>
   )
 }
